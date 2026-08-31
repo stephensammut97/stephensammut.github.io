@@ -126,7 +126,14 @@ nav a {
 .grid-container-2 {
      display: grid;
     grid-template-columns: repeat(1, 1fr);
-  
-  
+}
+
+.top-homepage{
+  height: 230px;  
+}
+
+@media (max-width: 462px) {
+.project-copy-content{
+    display: block;
 }
 }
