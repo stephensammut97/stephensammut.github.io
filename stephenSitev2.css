@@ -45,6 +45,10 @@ nav a {
     text-decoration: none;
 }
 
+.menu-toggle{
+    display: none;
+}
+
 
 /* -------------------------
    PROJECT GRID
@@ -110,13 +114,47 @@ nav a {
     font-size: 16px;
 }
 
+@media (max-width: 1080px) {
+
+
+    .project-copy-content{
+    display: block;
+}
+}
+
 @media (max-width: 768px) {
 
 .grid-container-2 {
      display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    width: 100%;
+    width: 100%; 
+}
+
+.menu-toggle{
+    display: block;
+    position:relative;
+    z-index: 10;    
+}
+nav{
+    display: none;
+}
+nav.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
 }
   
 
@@ -126,14 +164,20 @@ nav a {
 .grid-container-2 {
      display: grid;
     grid-template-columns: repeat(1, 1fr);
+  
+  
 }
-
 .top-homepage{
   height: 230px;  
 }
+}
+
+
 
 @media (max-width: 462px) {
 .project-copy-content{
     display: block;
 }
+
+
 }
