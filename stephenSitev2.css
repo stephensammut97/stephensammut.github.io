@@ -154,6 +154,11 @@ nav a {
     font-size: 16px;
 }
 
+.intro-copy.case-study-intro.new-row {
+    width: 50%;
+    padding: 5%;
+}
+
 @media(min-width: 1024px){
 a {
     position: relative;
@@ -237,6 +242,11 @@ a:hover::after {
 
 
 @media (max-width: 600px) {
+
+    .intro-copy.case-study-intro.new-row {
+    width: 100%;
+    padding: 2%;
+}
 
     .grid-container{
         padding-bottom: 5%;
