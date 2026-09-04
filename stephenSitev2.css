@@ -244,7 +244,8 @@ nav a {
 
     .intro-copy.case-study-intro {
         padding-bottom: 0px;
-        font-size: 12px;
+        font-size: 0.889rem;
+        line-height: 1.1rem;
     }
 
 
