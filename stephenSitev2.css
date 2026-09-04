@@ -246,6 +246,7 @@ a:hover::after {
     .intro-copy.case-study-intro.new-row {
     width: 100%;
     padding: 2%;
+  padding-bottom: 6%
 }
 
     .grid-container{
