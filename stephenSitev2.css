@@ -215,6 +215,24 @@ nav a {
     .top-homepage {
         height: 230px;
     }
+
+    .grid-container-2.two-column-layout{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .grid-container-2.column-layout {
+        width: 100%;
+    }
+
+    .top-homepage.new-row {
+        padding: 0;
+    }
+
+    .case-study-container {
+        margin-bottom: 5px;
+    }
 }
 
 
@@ -222,6 +240,11 @@ nav a {
 @media (max-width: 462px) {
     .project-copy-content {
         display: block;
+    }
+
+    .intro-copy.case-study-intro {
+        padding-bottom: 0px;
+        font-size: 12px;
     }
 
 
