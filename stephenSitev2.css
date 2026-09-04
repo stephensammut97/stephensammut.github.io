@@ -258,5 +258,12 @@ nav a {
         line-height: 1.1rem;
     }
 
+    .case-study-container{
+        padding-bottom: 5%;
+    }
 
+    .project-name-span {
+        padding-top: 5px;
+    
+    }
 }
