@@ -1,20 +1,47 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
 }
 
 
 
 .webpage {
-    width: 100%;
-    min-height: 100vh;
-    padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* CASE STUDY LINK */
+
+.case-study-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+    transition: gap 0.3s ease;
+    padding-top: 10px;
+}
+
+.case-study-link .arrow {
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.3s ease;
+}
+
+.case-study-link:hover {
+    gap: 12px;
+}
+
+.case-study-link:hover .arrow {
+    transform: translate(2px, -2px);
 }
 
 
@@ -23,162 +50,146 @@ body {
 ------------------------- */
 
 .top-homepage {
-    width: 100%;
-    height: 320px;
+  width: 100%;
+  height: 320px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 
-    padding: 10px;
+  padding: 10px;
 }
 
 .top-homepage.new-row {
-    padding: 40px;
-    height: 100%;
+  padding: 40px;
+  height: 100%;
 }
 
 .logo {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 nav {
-    display: flex;
-    gap: 60px;
+  display: flex;
+  gap: 60px;
 }
 
 nav a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .menu-toggle {
-    display: none;
+  display: none;
 }
-
 
 /* -------------------------
    PROJECT GRID
 ------------------------- */
 
 .grid-container {
-    width: 100%;
-    padding: 0 10px;
+  width: 100%;
+  padding: 0 10px;
 }
 
 .grid-container-2 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
 }
 
 .grid-container-2.column-layout {
-    display:flex;
-    flex-direction: column;
-    width: 40%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
 }
 
 .grid-container-2.two-column-layout {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 100%;
 }
 
 .video {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
 
 /* -------------------------
    PROJECT
 ------------------------- */
 
 .case-study-container {
-    width: 100%;
-    margin-bottom: 40px;   
+  width: 100%;
+  margin-bottom: 10px; 
 }
 
 .case-study-container a {
-    display: block;
-    color: #000;
-    text-decoration: none;
-
+  display: block;
+  color: #000;
+  text-decoration: none;
 }
 
 .case-study-container img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.case-study-container.two-rows{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
+.case-study-container.two-rows {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
 }
-
-
-
-
-
 
 .case-study-text {
-    margin-top: 8px;
-    font-size: 12px;
+  margin-top: 8px;
+  font-size: 12px;
 }
 
 .project-name {
-    padding-top: 10px;
-    font-size: 12px;
+  padding-top: 10px;
+  font-size: 12px;
 }
 
 .project-name-span {
-    padding-top: 10px;
-    font-size: 10px;
-    color: #656565;
+  padding-top: 10px;
+  font-size: 10px;
+  color: #656565;
 }
 
 .project-copy-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-
 .intro-copy {
-    padding-bottom: 100px;
-    font-size: 14px;
+  padding-bottom: 100px;
+  font-size: 14px;
 }
 
 .intro-copy.case-study-intro {
-    padding-bottom: 0px;
-    
+  padding-bottom: 0px;
 }
 
 .intro-copy.case-study-intro.new-row {
-    width: 40vw;
-    padding: 5%;
+  width: 40vw;
+  padding: 5%;
 }
 
-
-@media(min-width: 1024px){
-a {
+@media (min-width: 1024px) {
+  a {
     position: relative;
     text-decoration: none;
     color: inherit;
-}
+  }
 
-
-
-
-a::after {
+  a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -189,136 +200,136 @@ a::after {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
+  }
 
-a:hover::after {
+  a:hover::after {
     transform: scaleX(1);
-}
+  }
 }
 
 @media (max-width: 1080px) {
-
-
-    .project-copy-content {
-        display: block;
-    }
+  .project-copy-content {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
 
-    .intro-copy.case-study-intro.new-row {
+    .grid-container-2.column-layout{
+        
+      width: 100%;
+    }
+  .intro-copy.case-study-intro.new-row {
     width: 100%;
     padding: 5%;
+  }
+
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 10;
+    border: none;
+    background: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 7vw;
+    height: 100vh;
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.08);
+
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 80px;
+
+    transform: translateX(100%);
+
+    transition: transform 0.7s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  nav.open {
+    transform: translateX(0);
+  }
 }
-
-    .grid-container-2 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-        width: 100%;
-    }
-
-    .menu-toggle {
-        display: block;
-        position: relative;
-        z-index: 10;
-        border: none;
-        background: none;
-    }
-
-    nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-
-        width: 7vw;
-        height: 100vh;
-        box-shadow: -8px 0 30px rgba(0, 0, 0, 0.08);
-
-        background: #fff;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-
-        padding: 80px;
-
-        transform: translateX(100%);
-
-        transition:
-            transform 0.7s cubic-bezier(0.76, 0, 0.24, 1);
-    }
-
-
-    nav.open {
-        transform: translateX(0);
-    }
-}
-
-
 
 @media (max-width: 600px) {
-
-    .intro-copy.case-study-intro.new-row {
+  .intro-copy.case-study-intro.new-row {
     width: 100%;
     padding: 2%;
-  padding-bottom: 6%
+    padding-bottom: 6%;
+  }
+
+  .grid-container {
+    padding-bottom: 5%;
+  }
+
+  .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .top-homepage {
+    height: 230px;
+  }
+
+  .grid-container-2.two-column-layout {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-container-2.column-layout {
+    width: 100%;
+  }
+
+  .top-homepage.new-row {
+    padding: 0;
+  }
+
+  .case-study-container {
+    margin-bottom: 5px;
+  }
 }
-
-    .grid-container{
-        padding-bottom: 5%;
-    }
-
-    .grid-container-2 {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-
-
-    }
-
-    .top-homepage {
-        height: 230px;
-    }
-
-    .grid-container-2.two-column-layout{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        
-    }
-
-    .grid-container-2.column-layout {
-        width: 100%;
-    }
-
-    .top-homepage.new-row {
-        padding: 0;
-    }
-
-    .case-study-container {
-        margin-bottom: 5px;
-    }
-}
-
-
 
 @media (max-width: 462px) {
-    .project-copy-content {
-        display: block;
-    }
 
-    .intro-copy.case-study-intro {
-        padding-bottom: 0px;
-        font-size: 0.889rem;
-        line-height: 1.1rem;
-    }
+  .padding {
+  padding: 10px;
+}
+  .project-copy-content {
+    display: block;
+  }
 
-    .case-study-container{
-        padding-bottom: 5%;
-    }
+  .intro-copy.case-study-intro {
+    padding-bottom: 0px;
+    font-size: 0.889rem;
+    line-height: 1.1rem;
+  }
 
-    .project-name-span {
-        padding-top: 5px;
-    
-    }
+  .case-study-container {
+    padding-bottom: 5%;
+  }
+
+  .project-name-span {
+    padding-top: 5px;
+  }
+
+ .intro-copy.case-study-intro.new-row{
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
 }
