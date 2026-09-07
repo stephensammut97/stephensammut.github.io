@@ -20,28 +20,28 @@ body {
 /* CASE STUDY LINK */
 
 .case-study-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    transition: gap 0.3s ease;
-    padding-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  transition: gap 0.3s ease;
+  padding-top: 10px;
 }
 
 .case-study-link .arrow {
-    font-size: 20px;
-    line-height: 1;
-    transition: transform 0.3s ease;
+  font-size: 20px;
+  line-height: 1;
+  transition: transform 0.3s ease;
 }
 
 .case-study-link:hover {
-    gap: 12px;
+  gap: 12px;
 }
 
 .case-study-link:hover .arrow {
-    transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
 }
 
 
@@ -123,9 +123,17 @@ nav a {
    PROJECT
 ------------------------- */
 
+.one-col-layout {
+  display: flex;
+  flex-direction: column;
+  width: 71%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .case-study-container {
   width: 100%;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .case-study-container a {
@@ -182,6 +190,8 @@ nav a {
   padding: 5%;
 }
 
+
+
 @media (min-width: 1024px) {
   a {
     position: relative;
@@ -215,10 +225,11 @@ nav a {
 
 @media (max-width: 768px) {
 
-    .grid-container-2.column-layout{
-        
-      width: 100%;
-    }
+  .grid-container-2.column-layout {
+
+    width: 100%;
+  }
+
   .intro-copy.case-study-intro.new-row {
     width: 100%;
     padding: 5%;
@@ -307,15 +318,23 @@ nav a {
 
 @media (max-width: 462px) {
 
+  .one-col-layout {
+    width: 100%;
+    position: absolute;
+    top: 137%;
+    left: 0%;
+  }
+
   .padding {
-  padding: 10px;
-}
+    padding: 10px;
+  }
+
   .project-copy-content {
     display: block;
   }
 
   .intro-copy.case-study-intro {
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     font-size: 0.889rem;
     line-height: 1.1rem;
   }
@@ -328,7 +347,7 @@ nav a {
     padding-top: 5px;
   }
 
- .intro-copy.case-study-intro.new-row{
+  .intro-copy.case-study-intro.new-row {
     font-size: 0.7rem;
     line-height: 1.1rem;
   }
